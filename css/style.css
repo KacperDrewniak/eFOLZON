@@ -178,4 +178,112 @@ aside div i {
 aside div p {
   color: white;
 }
+
+div.contact {
+  height: 100vh;
+  background-color: #050605;
+  background-image: url("/images/img1.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.contact div {
+  color: white;
+  border: 2px solid white;
+  backgrond-color: transparent;
+  width: 40%;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+div.contact input {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  display: block;
+  width: 40%;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+div.contact input::-webkit-input-placeholder {
+  color: white;
+}
+
+div.contact input:-ms-input-placeholder {
+  color: white;
+}
+
+div.contact input::-ms-input-placeholder {
+  color: white;
+}
+
+div.contact input::placeholder {
+  color: white;
+}
+
+div.contact input:nth-child(4) {
+  height: 30%;
+}
+
+div.contact textarea {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 30px;
+  padding: 20px;
+  display: block;
+  width: 40%;
+  border: 2px solid white;
+}
+
+div.contact textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+div.contact textarea:-ms-input-placeholder {
+  color: white;
+}
+
+div.contact textarea::-ms-input-placeholder {
+  color: white;
+}
+
+div.contact textarea::placeholder {
+  color: white;
+}
+
+div.contact button {
+  cursor: pointer;
+  display: block;
+  width: 20%;
+  height: 20%;
+  font-size: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  color: white;
+}
+
+footer {
+  padding-top: 100px;
+  background-color: #050605;
+  height: 300px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer img {
+  width: 40%;
+}
 /*# sourceMappingURL=style.css.map */
