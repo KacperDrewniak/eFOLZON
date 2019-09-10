@@ -5,6 +5,52 @@
   font-family: 'Roboto', sans-serif;
 }
 
+div.icon {
+  z-index: 11;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+div.icon div {
+  border-radius: 3px 3px 3px 3px;
+  margin: 5px;
+  width: 40px;
+  height: 6px;
+  background-color: white;
+}
+
+div.menu {
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  width: 100vh;
+  background-color: #050605;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
+}
+
+div.menu ul {
+  color: white;
+  font-size: 50px;
+  padding: 80px 20px;
+  list-style-type: none;
+}
+
+div.menu ul li img {
+  margin-top: 50px;
+  width: 50%;
+}
+
+div.menu.active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 header {
   height: 100vh;
 }
@@ -465,6 +511,54 @@ footer img {
   }
   div.contact button {
     width: 75vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+  main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section:nth-child(odd) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main {
+    height: 300vh;
+  }
+  main section div {
+    font-size: 15px;
+  }
+  div.contact button {
+    height: 10%;
+  }
+  aside div {
+    font-size: 18px;
+  }
+  footer img {
+    width: 60%;
+  }
+  footer p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    height: 400vh;
+  }
+  aside h1 {
+    font-size: 20px;
+  }
+  div.contact * {
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,6 +11,41 @@ $primary-black: #050605
     margin: 0
     padding: 0
     font-family: 'Roboto', sans-serif
+// .icon
+
+div.icon
+    
+    z-index: 11
+    position: fixed 
+    top: 20px 
+    right: 20px
+    div
+        border-radius: 3px 3px 3px 3px
+        margin: 5px
+        width: 40px
+        height: 6px
+        background-color: white
+//Rolling Menu
+div.menu
+    position: fixed
+    z-index: 10
+    height: 100vh
+    width: 100vh
+    background-color: $primary-black
+    transition: transform 1s
+    transform: translateY(-300%)
+    & ul 
+        color: white
+        font-size: 50px
+        padding: 80px 20px
+        list-style-type: none
+        & li img
+            margin-top: 50px
+            width: 50%
+             
+    &.active
+        transform: translateY(0%)
+
 
 // First Wrapper
 header
@@ -46,6 +81,7 @@ header
         ul li:hover:after
             transform: translateX(0)
     div.logo 
+        
         animation: mainLogoAfterLoad 1s ease-out 1.3s both
         position: absolute
         left: 50%
@@ -247,6 +283,7 @@ footer
     from
         transform: translate(-50%, -50%) scale(0)
     to
+        
         transform: translate(-50%, -50%) scale(1)
 
 
@@ -289,3 +326,36 @@ footer
         width: 75vw
     div.contact button
         width: 75vw
+
+@media (max-width: 1024px)
+    nav
+        display: none
+    main section
+        flex-direction: column
+        &:nth-child(odd)
+            flex-direction: column-reverse
+            
+    main
+        height: 300vh
+    main section div
+        font-size: 15px
+    main section div img
+    
+    div.contact button 
+        height: 10%
+    aside div
+        font-size: 18px
+    footer img
+        width: 60%
+    footer p
+        font-size: 28px
+
+
+@media (max-width: 768px)
+    main
+        height: 400vh
+    aside h1
+        font-size: 20px
+    div.contact * 
+        margin: 20px
+    header div.logo p
