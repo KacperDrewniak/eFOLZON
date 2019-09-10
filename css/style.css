@@ -138,4 +138,44 @@ main section div.left {
 main section div.right {
   text-align: left;
 }
+
+aside {
+  background-color: #050605;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+aside h1 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+aside div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+}
+
+aside div i {
+  margin: 0 20px;
+  color: white;
+}
+
+aside div p {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
