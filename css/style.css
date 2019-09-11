@@ -239,6 +239,10 @@ main section:nth-child(5) {
 
 main section:nth-child(5) img {
   width: 60%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 main section:nth-child(5) div {
@@ -284,6 +288,11 @@ main section button:hover:before {
   height: 120%;
 }
 
+main section div:hover {
+  -webkit-animation: shadow 15s infinite;
+          animation: shadow 15s infinite;
+}
+
 main section div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,17 +310,23 @@ main section div {
   width: 770px;
   height: 440px;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 main section div img {
   background-size: cover;
   width: 100%;
-  -webkit-transition: 5.5s;
-  transition: 5.5s;
+  -webkit-transition: 5.5s, -webkit-transform 1.1s;
+  transition: 5.5s, -webkit-transform 1.1s;
+  transition: 5.5s, transform 1.1s;
+  transition: 5.5s, transform 1.1s, -webkit-transform 1.1s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 main section div img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-animation: image infinite 35s;
           animation: image infinite 35s;
 }
@@ -512,8 +527,8 @@ div.contact article {
   width: 100%;
   position: absolute;
   z-index: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(transparent), to(black));
-  background: linear-gradient(black, transparent, black);
+  background: -webkit-gradient(linear, left top, left bottom, from(#050605), color-stop(transparent), to(#050605));
+  background: linear-gradient(#050605, transparent, #050605);
 }
 
 footer {
@@ -594,6 +609,48 @@ footer img {
   to {
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    text-shadow: 0;
+  }
+  20% {
+    text-shadow: 2px 2px 5px white;
+  }
+  40% {
+    text-shadow: 3px 3px 5px green;
+  }
+  60% {
+    text-shadow: 4px 4px 5px blue;
+  }
+  80% {
+    text-shadow: 3px 3px 5px white;
+  }
+  100% {
+    text-shadow: 0;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    text-shadow: 0;
+  }
+  20% {
+    text-shadow: 2px 2px 5px white;
+  }
+  40% {
+    text-shadow: 3px 3px 5px green;
+  }
+  60% {
+    text-shadow: 4px 4px 5px blue;
+  }
+  80% {
+    text-shadow: 3px 3px 5px white;
+  }
+  100% {
+    text-shadow: 0;
   }
 }
 
