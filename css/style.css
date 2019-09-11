@@ -131,18 +131,18 @@ header #bgc {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-animation: slider 24s infinite both;
-          animation: slider 24s infinite both;
+  -webkit-animation: slider 8s infinite both;
+          animation: slider 8s infinite both;
 }
 
 header #bgc:nth-child(2) {
-  -webkit-animation: slider 24s infinite both 8s;
-          animation: slider 24s infinite both 8s;
+  -webkit-animation: slider 8s infinite both 8s;
+          animation: slider 8s infinite both 8s;
 }
 
 header #bgc:nth-child(3) {
-  -webkit-animation: slider 24s infinite both ys;
-          animation: slider 24s infinite both ys;
+  -webkit-animation: slider 8s infinite both 16s;
+          animation: slider 8s infinite both 16s;
 }
 
 header nav {
@@ -699,6 +699,10 @@ footer img {
   }
   div.contact button {
     font-size: 30px;
+  }
+  main section button {
+    padding: 0px;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
