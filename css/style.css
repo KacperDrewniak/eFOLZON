@@ -383,7 +383,7 @@ aside div p {
 div.contact {
   height: 150vh;
   background-color: #050605;
-  background-image: url("/images/img1.jpg");
+  background-image: url("https://github.com/KacperDrewniak/eFOLZON/blob/master/images/img1.jpg?raw=true");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
