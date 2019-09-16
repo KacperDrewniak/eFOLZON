@@ -14,6 +14,7 @@ menuClick.addEventListener('click',()=>{
 blackMenu = document.querySelector('div.menu')
 blackMenu.addEventListener('click',()=>{
     blackMenu.classList.toggle('active')
+    menuClick.classList.toggle('active')
 })
 
 
