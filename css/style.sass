@@ -6,7 +6,10 @@
 // Variables
 $primary-black: #050605
 
-
+#ascrail2000-hr
+    display: none !important
+html
+    overflow-x: hidden
 body 
     overflow-x: hidden
     background-color: $primary-black    
@@ -85,6 +88,7 @@ header
     
     height: 100vh
     #bgc
+        object-fit: cover;
         z-index: -1
         position: absolute
         width: 100%
@@ -119,7 +123,7 @@ header
         ul li:hover:after
             transform: translateX(0)
     div.logo 
-        
+        text-align: center
         animation: mainLogoAfterLoad 1s ease-out 1.3s both
         position: absolute
         left: 50%
@@ -136,12 +140,13 @@ header
 // Second Wrapper
 
 main
-    height: 350vh
+
     background-color: $primary-black 
     display: flex
     flex-direction: column
     justify-content: space-evenly
     section
+        margin: 30px 0
         height: 400px
         display: flex
         justify-content: space-evenly
@@ -231,9 +236,8 @@ main
 //  4 Ewryfingi 
 
 aside 
-    padding-bottom: 100px
+    padding: 200px 0 
     background-color: $primary-black
-    height: 100vh
     display: flex
     flex-direction: column
     align-items: center
@@ -243,6 +247,7 @@ aside
         text-align: center
         color: white
     div
+        margin: 40px 0
         display: flex
         font-size: 40px
         i
@@ -400,85 +405,232 @@ footer
 
 // Responsivity
 
-@media (max-width: 1440px)
-    header nav ul li
-        font-size: 50px
-    main section div
-        width: 600px
-    aside 
-        height: 90vh
-    #bgc
-        height: 100%
-        object-fit: cover;
+// @media (max-width: 1440px)
+//     header nav ul li
+//         font-size: 50px
+//     main section div
+//         width: 600px
+//     aside 
+//         height: 90vh
+//     #bgc
+//         height: 100%
+//         object-fit: cover;
 
-@media (max-width: 1280px)
-    header nav ul li
-        font-size: 30px
-    header div.logo img
-        width: 80vw
-    header div.logo p
-        font-size: 40px   
-    main section div
-        font-size: 20px
-        width: 300px 
-    main 
-        height: 185vh
+// @media (max-width: 1280px)
+//     header nav ul li
+//         font-size: 30px
+//     header div.logo img
+//         width: 80vw
+//     header div.logo p
+//         font-size: 40px   
+//     main section div
+//         font-size: 20px
+//         width: 300px 
+//     main 
+//         height: 185vh
 
-    aside 
-        height: 60vh
-        div 
-            font-size: 25px
-    div.contact div
-        width: 80vw
-    div.contact input
-        width: 75vw
-    div.contact textarea
-        width: 75vw
-    div.contact button
-        width: 75vw
+//     aside 
+//         height: 60vh
+//         div 
+//             font-size: 25px
+//     div.contact div
+//         width: 80vw
+//     div.contact input
+//         width: 75vw
+//     div.contact textarea
+//         width: 75vw
+//     div.contact button
+//         width: 75vw
 
-@media (max-width: 1024px)
-    nav
-        display: none
-    main section
-        flex-direction: row
-        &:nth-child(odd)
-            flex-direction: row-reverse
+// @media (max-width: 1024px)
+//     nav
+//         display: none
+//     main section
+//         flex-direction: row
+//         &:nth-child(odd)
+//             flex-direction: row-reverse
             
-    main
-        height: 300vh
-    main section div
-        font-size: 15px
-    main section div img
+//     main
+//         height: 300vh
+//     main section div
+//         font-size: 15px
+//     main section div img
     
-    div.contact button 
-        height: 10%
+//     div.contact button 
+//         height: 10%
+//     aside div
+//         font-size: 18px
+//     footer img
+//         width: 60%
+//     footer p
+//         font-size: 28px
+//     div.icon
+//         display: block
+
+// @media (max-width: 768px)
+//     main section
+//         flex-direction: column
+//     main section:nth-child(odd)
+//         flex-direction: column-reverse
+//     main section:nth-child(5)
+//         flex-direction: column
+//     main
+//         height: 400vh
+//     aside h1
+//         font-size: 20px
+//     div.contact button
+//         font-size: 30px
+//     main section button
+//         padding: 0px
+//         font-size: 20px
+
+
+
+
+
+
+// Responsivity
+
+@media (max-width: 1620px)
+    main section:nth-child(5) img
+        width: 50%
+    main section
+        div
+            width: 700px
+            font-size: 35px
+        img
+            width: 80%
+    
+
+    div.contact button
+        font-size: 40px
+        height: 6%
+
+
+@media (max-width: 1440px)
+    main section:nth-child(5) img
+        width: 35%
+    main section
+        div
+            width: 550px
+            font-size: 30px
+        img
+            width: 80%
+    
+
+    div.contact button
+        font-size: 40px
+        height: 6%
+
+        
+@media (max-width: 1200px)
+    main section:nth-child(5) img
+        width: 40%
+    main section
+        div
+            width: 480px
+            font-size: 26px
+        img
+            width: 68%
+    
+
+    div.contact button
+        font-size: 40px
+        height: 6%
+    div.contact *
+        width: 60% !important
+
     aside div
-        font-size: 18px
-    footer img
-        width: 60%
-    footer p
-        font-size: 28px
+        font-size: 30px
+
+
+@media (max-width: 1000px)
+    main section:nth-child(5) img
+        width: 50%
+    main section
+        div
+            width: 450px
+            font-size: 20px
+        img
+            width: 58%
+    div.contact button
+        font-size: 25px
+        height: 6%
+    div.contact *
+        width: 60% !important
+
+    aside div
+        font-size: 30px
+
+    header nav ul li 
+        font-size: 45px
+
+
+header div.logo img 
+    width: 75vw
+
+@media (max-width: 900px)
+    header nav
+        display: none
     div.icon
         display: block
 
-@media (max-width: 768px)
+    main section:nth-child(5) img
+        width: 60%
     main section
+        div
+            width: 480px
+            font-size: 26px
+        img
+            width: 68%
+    
+
+    div.contact button
+        font-size: 40px
+        height: 6%
+    div.contact *
+        width: 60% !important
+
+    aside div
+        font-size: 30px
+    main section:nth-child(even)
         flex-direction: column
     main section:nth-child(odd)
         flex-direction: column-reverse
+    main section
+        height: 600px
     main section:nth-child(5)
         flex-direction: column
-    main
-        height: 400vh
-    aside h1
-        font-size: 20px
-    div.contact button
+    div.contact div 
         font-size: 30px
+    div.contact input
+        font-size: 25px
     main section button
-        padding: 0px
+        margin: 20px auto
+@media (max-width: 768px)
+    main section div
+        width: 450px
         font-size: 20px
 
-
-#ascrail2000-hr
-    display: none
+@media (max-width: 500px)
+    main section:nth-child(5) img 
+        width: 90%    
+        
+@media (max-width: 450px)
+    main section div 
+        width: 400px
+    aside h1
+        font-size: 28px
+    aside div
+        font-size: 25px
+        
+        
+@media (max-width: 400px)
+    header div.logo img 
+        width: 97vw
+    main section div
+        width: 300px
+    main section
+        margin: 10px
+    aside
+        padding: 50px 0
