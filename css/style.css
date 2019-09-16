@@ -544,7 +544,7 @@ footer img {
 
 @media (max-width: 768px) {
   main section {
-    flex-direction: columen;
+    flex-direction: column;
   }
   main section:nth-child(odd) {
     flex-direction: column-reverse;
