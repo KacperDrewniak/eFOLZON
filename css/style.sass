@@ -69,13 +69,13 @@ div.menu
     0%
         opacity: 0
     10% 
-        opacity: 1
+        opacity: 0
     20%
         opacity: 1
     30% 
         opacity: 1
     40% 
-        opacity: 0
+        opacity: 1
     100%
         opacity: 0
         
@@ -441,9 +441,9 @@ footer
     nav
         display: none
     main section
-        flex-direction: column
+        flex-direction: row
         &:nth-child(odd)
-            flex-direction: column-reverse
+            flex-direction: row-reverse
             
     main
         height: 300vh
@@ -463,6 +463,10 @@ footer
         display: block
 
 @media (max-width: 768px)
+    main section
+        flex-direction: columen
+    main section:nth-child(odd)
+        flex-direction: column-reverse
     main
         height: 400vh
     aside h1
